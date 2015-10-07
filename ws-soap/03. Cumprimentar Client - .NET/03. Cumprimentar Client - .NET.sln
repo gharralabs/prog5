@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Cumprimentar Client - .NET", "02. Cumprimentar Client - .NET.csproj", "{FD39979E-986B-47F2-9705-B84D58415A03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Cumprimentar Client - .NET", "03. Cumprimentar Client - .NET.csproj", "{FD39979E-986B-47F2-9705-B84D58415A03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
