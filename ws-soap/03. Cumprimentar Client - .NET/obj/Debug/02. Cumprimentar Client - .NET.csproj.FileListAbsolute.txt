@@ -1,0 +1,6 @@
+C:\F\Faculdade\PUCPR\Professor\2015\Semestre 2\Programação V\prog5\ws-soap\02. Cumprimentar Client - .NET\bin\Debug\_02.Cumprimentar_Client__.NET.exe.config
+C:\F\Faculdade\PUCPR\Professor\2015\Semestre 2\Programação V\prog5\ws-soap\02. Cumprimentar Client - .NET\bin\Debug\_02.Cumprimentar_Client__.NET.exe
+C:\F\Faculdade\PUCPR\Professor\2015\Semestre 2\Programação V\prog5\ws-soap\02. Cumprimentar Client - .NET\bin\Debug\_02.Cumprimentar_Client__.NET.pdb
+C:\F\Faculdade\PUCPR\Professor\2015\Semestre 2\Programação V\prog5\ws-soap\02. Cumprimentar Client - .NET\obj\Debug\02. Cumprimentar Client - .NET.csprojResolveAssemblyReference.cache
+C:\F\Faculdade\PUCPR\Professor\2015\Semestre 2\Programação V\prog5\ws-soap\02. Cumprimentar Client - .NET\obj\Debug\_02.Cumprimentar_Client__.NET.exe
+C:\F\Faculdade\PUCPR\Professor\2015\Semestre 2\Programação V\prog5\ws-soap\02. Cumprimentar Client - .NET\obj\Debug\_02.Cumprimentar_Client__.NET.pdb
