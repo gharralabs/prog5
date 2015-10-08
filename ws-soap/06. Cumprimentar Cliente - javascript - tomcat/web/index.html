@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consumindo com Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            label{
+                float:left;
+                display:block;
+                font-weight: bold;
+                width: 150px;
+            }
+
+            input{
+                display:block;
+                width:300px;
+            }
+
+            textarea{
+                display:block;
+                width:600px;
+                height: 200px;
+                margin-top:10px;
+            }
+
+            button{
+                clear:both;
+                margin-left: 150px;
+                margin-top: 10px;
+            }
+        </style>
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <script>
+            $().ready(function () {
+
+                $('#botao').click(function () {
+
+                    var dados = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.gharralabs.br/">' +
+                            '<soapenv:Body>' +
+                            '<ser:cumprimentar>' +
+                            '<arg0>' + $("#nome").val() + '</arg0>' +
+                            '</ser:cumprimentar>' +
+                            '</soapenv:Body>' +
+                            '</soapenv:Envelope>';
+
+                    var url = 'http://localhost:8084/cumprimentar/api/hello';
+
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        contentType: "text/xml",
+                        dataType: "xml",
+                        data: dados,
+                        success: function (data, status, req) {
+
+                            var valorTagRetorno = req.responseXML
+                                    .getElementsByTagName('return')[0]
+                                    .childNodes[0]
+                                    .textContent;
+
+                            $("#respostaXml").html(valorTagRetorno);
+                            $("#respostaText").html(req.responseText);
+                        },
+                        error: function (data, status, req) {
+                            alert('Ocorreu um erro com a requisição' + req);
+                        }
+                    });
+                });
+            })
+        </script>
+    </head>
+    <body>
+
+        <label for="nome">Informe seu nome: </label>
+        <input type="text" name="nome" id="nome">
+        <label for="respostaXml">Resposta do Servidor (Xml):</label>
+        <textarea id="respostaXml"></textarea>
+        <label for="respostaText">Resposta do Servidor (Text):</label>
+        <textarea id="respostaText"></textarea>
+        <button type="button"
+                id="botao">Invocar Webservice</button>
+
+    </body>
+</html>
