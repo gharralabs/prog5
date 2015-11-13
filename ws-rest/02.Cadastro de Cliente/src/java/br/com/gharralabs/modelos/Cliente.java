@@ -1,5 +1,6 @@
 package br.com.gharralabs.modelos;
 
+import java.util.List;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
@@ -8,6 +9,17 @@ public class Cliente
     private long Id;
     private String nome;
     private float salario;
+    private List<Endereco> enderecos;
+
+    public List<Endereco> getEnderecos()
+    {
+        return enderecos;
+    }
+
+    public void setEnderecos(List<Endereco> enderecos)
+    {
+        this.enderecos = enderecos;
+    }
     
     public long getId()
     {
